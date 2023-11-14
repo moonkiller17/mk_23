@@ -3,6 +3,8 @@
 
 int main () {
 
+    rcc_clock_setup_pll(&rcc_hsi_configs[RCC_CLOCK_HSI_64MHZ]);
+
     // Разморозка светодиодов
     rcc_periph_clock_enable(RCC_GPIOE);
 
